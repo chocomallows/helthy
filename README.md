@@ -1,5 +1,1 @@
-<<<<<<< HEAD
-hey lucas here pushing from my end
-=======
-// Test test test
->>>>>>> upstream/main
+Im just adding a comment in between che chaos
