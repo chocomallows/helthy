@@ -48,6 +48,19 @@
 
       #links-container > a {
         text-decoration: none;
+        color: inherit;
+        padding: 5px;
+        border-radius: 10px;
+        -webkit-transition: background-color 500ms linear;
+        -ms-transition: background-color 500ms linear;
+        transition: background-color 500ms linear;
+      }
+
+      #links-container > a:hover {
+        background-color: #fef4eb;
+        -webkit-transition: background-color 500ms linear;
+        -ms-transition: background-color 500ms linear;
+        transition: background-color 500ms linear;
       }
 
       #contact-title {
@@ -82,6 +95,26 @@
         padding: 1rem;
         overflow: hidden;
       }
+
+      @media only screen and (max-width: 430px) {
+        #name {
+          display: none;
+        }
+      }
+
+      #appointment-link {
+        position: fixed;
+        bottom: 70px;
+        right: 0.5em;
+        text-decoration: none;
+        padding: 5px;
+        background-color: #d0b3b9;
+        color: inherit;
+        border-radius: 5px;
+        font-size: clamp(0.5rem, 1.5vw, 5rem);
+        -webkit-box-shadow: 0 0 7px rgb(47, 46, 46);
+        box-shadow: 0 0 7px rgb(47, 46, 46);
+      }
     </style>
     <header>
       <nav id="navbar">
@@ -103,6 +136,7 @@
 
         <div class="main-content"><< OUR CODE GOES HERE >></div>
       </div>
+      <a id="appointment-link" href="contact.html">Appointment</a>
     </main>
     <footer id="footer">
       <div id="copyright">copyright goes here</div>
