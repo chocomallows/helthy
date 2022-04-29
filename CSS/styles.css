@@ -113,3 +113,26 @@ body {
   display: flex;
   align-items: center;
 }
+
+header {
+  background-color: #d0b3b9;
+  text-align: center;
+  color: white;
+  font-size: 22px;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+p {
+  font-size: 20px;
+}
+
+.formContainer {
+  max-width: 150px;
+  background-color: #8e7f7fbb;
+  pad: 20px;
+  float: right;
+}
