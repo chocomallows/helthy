@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6dcd6007-7d4a-4383-a22a-400249dcfd04" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/CSS/styles.scss" beforeDir="false" afterPath="$PROJECT_DIR$/CSS/greet.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HTML/recipes.html" beforeDir="false" afterPath="$PROJECT_DIR$/HTML/recipes.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -46,6 +46,7 @@
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "watcher.settings",
     "vue.rearranger.settings.migration": "true"
   }
@@ -59,7 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1651153409857</updated>
       <workItem from="1651153412372" duration="1232000" />
-      <workItem from="1651218076086" duration="16603000" />
+      <workItem from="1651218076086" duration="17530000" />
     </task>
     <servers />
   </component>
