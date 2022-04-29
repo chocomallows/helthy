@@ -133,6 +133,29 @@ body {
   gap: 10px;
 }
 
+#contact-form > input {
+  padding: 5px;
+  font-size: clamp(1rem, 2vw, 3rem);
+}
+
+#contact-form > input[type="submit"] {
+  background-color: #d0b3b9;
+  border: 0;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+  cursor: pointer;
+  display: inline-block;
+  text-align: start;
+  border-radius: 10px;
+}
+#contact-form > input[type="submit"]:hover {
+  background-color: #fef4eb;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+}
+
 #contact-form > textarea {
   resize: vertical;
 }
