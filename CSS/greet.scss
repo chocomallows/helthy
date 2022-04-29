@@ -1,0 +1,25 @@
+.btn-primary{
+  background-color: #d0b3b9;
+  border-color: #d0b3b9;
+
+}
+.modal-header{
+  background-color: #fef4eb;
+}
+.modal-title{
+background-color: #fef4eb;
+  font-weight: bold;
+  font-size: 25px;
+}
+.modal-body{
+  background-color: #fef4eb;
+}
+.titel_recipe{
+  font-variant: small-caps;
+  font-weight: bold;
+}
+#recipes-title{
+  font-size: clamp(1rem, 10vw, 2rem);
+  padding: 10px;
+  font-weight: bold;
+}
