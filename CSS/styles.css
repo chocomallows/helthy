@@ -1,0 +1,115 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  background-color: #d6d8d4;
+}
+
+#navbar,
+#footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 50px;
+  background-color: #d0b3b9;
+  padding: 0 0.5em;
+  font-size: clamp(1rem, 2vw, 3rem);
+}
+
+#footer {
+  justify-content: center;
+  font-size: clamp(0.5rem, 1vw, 2rem);
+}
+
+#logo-container,
+#links-container,
+#copyright,
+#extras {
+  display: flex;
+  gap: 10px;
+  padding: 5px;
+}
+
+#links-container > a {
+  text-decoration: none;
+  color: inherit;
+  padding: 5px;
+  border-radius: 10px;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+}
+
+#links-container > a:hover {
+  background-color: #fef4eb;
+  -webkit-transition: background-color 500ms linear;
+  -ms-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+}
+
+#contact-title {
+  font-size: clamp(1rem, 10vw, 2rem);
+  padding: 10px;
+}
+
+#container-main {
+  background-color: #fef4eb;
+  min-height: calc(100vh - 100px);
+  margin-left: 10vw;
+  margin-right: 10vw;
+  box-shadow: -60px 0px 100px -90px #000000, 60px 0px 100px -90px #000000;
+}
+
+#logo {
+  width: 1.5em;
+  height: 1.5em;
+  cursor: pointer;
+}
+
+#name,
+#logo-container > a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#name {
+  font-family: "Shadows Into Light", cursive;
+}
+
+.main-content {
+  font-size: clamp(1rem, 2vw, 3rem);
+  padding: 1rem;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 430px) {
+  #name {
+    display: none;
+  }
+}
+
+#appointment-link {
+  position: fixed;
+  bottom: 70px;
+  right: 0.5em;
+  text-decoration: none;
+  padding: 5px;
+  background-color: #d0b3b9;
+  color: inherit;
+  border-radius: 5px;
+  font-size: clamp(0.5rem, 1.5vw, 5rem);
+  -webkit-box-shadow: 0 0 7px rgb(47, 46, 46);
+  box-shadow: 0 0 7px rgb(47, 46, 46);
+}
+
+#copyright {
+  display: flex;
+  align-items: center;
+}
