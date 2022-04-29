@@ -130,9 +130,34 @@ p {
   font-size: 20px;
 }
 
+section {
+  padding: 20px;
+  background-image: url('/Media/Images/Bachelors.jpg');
+  background-size: cover;
+  overflow: hidden;
+}
+
 .formContainer {
-  max-width: 150px;
+  max-width: 280px;
   background-color: #8e7f7fbb;
-  pad: 20px;
+  padding: 20px;
   float: right;
+}
+
+.mb {
+  margin-bottom: 20px;
+}
+
+input, select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
+}
+
+input[type="submit"]{
+  color: white;
+  background-color: rgb(3, 95, 128);
+  font-weight: bold;
 }
