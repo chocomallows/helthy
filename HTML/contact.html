@@ -41,23 +41,25 @@
 
         <div class="main-content">
           <div id="top-content">
-            <section
-              class="top"
-              id="container-form"
-            >
+            <section class="top" id="container-form">
               <form
                 id="contact-form"
                 action="https://api.formbucket.com/f/c2K3QTQ"
                 method="post"
               >
                 <label for="name">Name</label>
-                <input id="fname" type="text" name="Name" />
+                <input required id="fname" type="text" name="Name" />
 
                 <label for="email">Email</label>
-                <input id="email" type="email" name="Email" />
+                <input required id="email" type="email" name="Email" />
 
                 <label for="message">Message</label>
-                <textarea rows="10" id="message" name="Message"></textarea>
+                <textarea
+                  required
+                  rows="10"
+                  id="message"
+                  name="Message"
+                ></textarea>
                 <input type="submit" value="Submit" />
               </form>
             </section>
