@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../CSS/styles.css" />
-    <link rel="stylesheet" href="../CSS/greet.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/styles.css"/>
+    <link rel="stylesheet" href="../CSS/greet.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
             href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Roboto:ital,wght@0,100;0,700;1,300&family=Square+Peg&display=swap"
             rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link
             href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&family=Roboto:ital,wght@0,100;0,700;1,300&family=Shadows+Into+Light&family=Square+Peg&display=swap"
             rel="stylesheet"
     />
-    <meta name="description" content="" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content=""/>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Helthy | Title</title>
 </head>
 <body>
@@ -42,103 +43,172 @@
         <h1 id="recipes-title">Recipes</h1>
         <div class="main-content">
             <div class="container">
-                    <div class="row">
-                        <div class="col-12 col-md-4">
-                            <img src="..." class="img-fluid" alt="...">
-                        </div>
-                        <div class="col-12 col-md-8">
-                            text
-                            <!-- Full screen modal -->
-                            <!-- Button trigger modal -->
-                            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#RECEPT_1">
-                                Recipe
-                            </button>
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <img src="./../Media/Images/recipes/recipe_1_Shakshuka-Feta-Olives.webp"
+                             class="img-fluid image_recipe" alt="...">
+                    </div>
+                    <div class="col-12 col-md-8">
+                        Shakshuka, a dish of eggs poached in a spicy tomato sauce, has its origins in North Africa, but
+                        it has migrated to the Middle East and is now pretty much known all over the world, especially
+                        in Israel, where it is practically a national specialty.
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#RECEPT_1">
+                            Recipe
+                        </button>
 
-                            <!-- Modal -->
-                            <div class="modal fade" id="RECEPT_1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog modal-fullscreen">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel">TITEL VAN HET RECEPT</h5>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <h3 class="titel_recipe">ingredients</h3>
-                                            INGREDIENTS
-                                            <h3 class="titel_recipe">preparation</h3>
-                                            PREPARATION
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-8">
+                        text
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="..." class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <img src="..." class="img-fluid" alt="...">
+                    </div>
+                    <div class="col-12 col-md-8">
+                        text
+                    </div>
+
+                </div>
+                <div class="row">
+                    Carousel
+                    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="..." class="d-block w-100" alt="...">
+                                KOOKBOEK TITEL EN UITLEG
+                            </div>
+                            <div class="carousel-item">
+                                <img src="..." class="d-block w-100" alt="...">
+                                KOOKBOEK 2
+                            </div>
+                            <div class="carousel-item">
+                                <div class="row">
+                                    <div class="col-8 col-md-4">
+                                        <img src="./../Media/Images/recipes/OTTOLENGHI-2018.jpg"
+                                             height="200"
+                                             width="150"
+                                             class="d-block w-100"
+                                             alt="...">
+                                    </div>
+                                    <div class="col-4 col-md-8">
+                                        Yotam Ottolenghi is an international bestselling author.
+                                        Ottolenghi's inspiration comes from his Mediterranean background and his
+                                        enormous love for ingredients. He makes extremely original and innovative
+                                        vegetarian dishes, based on distinct flavors and exciting, fresh combinations.
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 col-md-8">
-                           text
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <img src="..." class="img-fluid" alt="...">
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <img src="..." class="img-fluid" alt="...">
-                        </div>
-                        <div class="col-12 col-md-8">
-                            text
-                        </div>
-
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
                     </div>
-                    <div class="row">
-                        Carousel
-                        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-                            </div>
-                            <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img src="..." class="d-block w-100" alt="...">
-                                    KOOKBOEK TITEL EN UITLEG
-                                </div>
-                                <div class="carousel-item">
-                                    <img src="..." class="d-block w-100" alt="...">
-                                    KOOKBOEK 2
-                                </div>
-                                <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-8 col-md-4">
-                                        <img src="./../Media/Images/recipes/OTTOLENGHI-2018.jpg" height="200" width="150" class="d-block w-100" alt="...">
-                                        </div>
-                                        <div class="col-4 col-md-8">
-                                        Yotam Ottolenghi is an international bestselling author. Ottolenghi's inspiration comes from his Mediterranean background and his enormous love for ingredients. He makes extremely original and innovative vegetarian dishes, based on distinct flavors and exciting, fresh combinations.
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
-                        </div>
-                    </div>
+                </div>
             </div>
 
 
-
-
-    </div>
-    <a id="appointment-link" href="contact.html">Appointment</a>
+        </div>
+        <a id="appointment-link" href="contact.html">Appointment</a>
 </main>
 <footer id="footer">
     <div id="copyright">Copyright &copy; Helthy Inc. 2022</div>
 </footer>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<!-- Modal -->
+<div class="modal fade" id="RECEPT_1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-fullscreen">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Shakshuka with Feta, Olives, and Peppers</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <h3 class="titel_recipe">ingredients</h3>
+                <ul>
+                    <li>2 tablespoons olive oil</li>
+                    <li>1 teaspoon smoked paprika</li>
+                    <li>1 teaspoon ground cumin</li>
+                    <li>1/4 teaspoon Maras or Aleppo pepper flakes,
+                        or 1/8 teaspoon crushed red pepper flakes
+                    </li>
+                    <li>1 large yellow onion, halved and thinly sliced</li>
+                    <li>2 cloves garlic, thinly sliced</li>
+                    <li>1 red bell pepper, seeded and thinly sliced</li>
+                    <li>1 yellow bell pepper, seeded and thinly sliced</li>
+                    <li>1 can (28 ounces) whole peeled tomatoes, preferably San Marzano</li>
+                    <li>1/2 teaspoon salt, or to taste</li>
+                    <li>4 ounces feta cheese, crumbled</li>
+                    <li>1/3 cup pitted Kalamata or other olives in brine</li>
+                    <li>4 large eggs</li>
+                    <li>1/4 bunch cilantro, leaves coarsely chopped (for garnish)1/4 bunch cilantro, leaves coarsely
+                        chopped (for garnish)
+                    </li>
+                </ul>
+
+                <h3 class="titel_recipe">preparation</h3>
+                <ol>
+                    <li>Cook the onion and peppers:
+                        In a large skillet over medium heat, heat the oil. Add the paprika, cumin,
+                        and pepper flakes and cook for 30 seconds to a minute to bloom the spices.
+
+                        Add the onion and cook, stirring occasionally, for 3 minutes.
+                        Add the garlic, red pepper, and yellow pepper and cook, stirring occasionally,
+                        for 15 minutes, or until the vegetables soften.
+                    </li>
+                    <li>Crush the tomatoes and simmer them with the peppers:
+                        In a bowl, break up the tomatoes with your hands. Add them to the skillet with the salt and cook
+                        for 5 minutes. Taste and add more salt, if you prefer.
+                    </li>
+                    <li>Cook the eggs:
+                        With the back of a spoon or a ladle, make 4 indentations in the sauce.
+
+                        Break an egg into a cup and carefully pour it into and indentation, being careful not to break
+                        the yolk. Repeat with the remaining eggs. (You can crack the egg directly into the sauce and
+                        skip the cup, but it’s easier to get a an errant egg shell or protect the dish from a bad egg if
+                        you use the cup method.)
+
+                        Sprinkle the feta and olives around the eggs. Cover the pan and simmer over medium heat for 8
+                        minutes, or until the whites are set and the yolks are still soft. (If you like your eggs well
+                        done, cook for a minute or two longer.)
+                    </li>
+                    <li>To serve:
+                        Garnish with cilantro leaves and a sprinkling of red pepper flakes. Bring to the table and serve
+                        from the pan.
+                    </li>
+                </ol>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </body>
 </html>
