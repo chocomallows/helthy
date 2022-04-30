@@ -227,12 +227,13 @@ input[type="submit"] {
 }
 
 .form-control {
+  position: relative;
   padding-bottom: 10px;
 }
 
-#contact-form .form-control input {
+.form-control input {
   padding: 5px;
-  font-size: clamp(1rem, 2vw, 3rem);
+  font-size: clamp(1.3rem, 2vw, 3rem);
 }
 
 #contact-form input[type="submit"] {
@@ -256,12 +257,59 @@ input[type="submit"] {
   font-size: clamp(1rem, 2vw, 3rem);
 }
 
-#contact-form .form-control textarea {
+.form-control textarea {
   resize: vertical;
   padding: 5px;
-  font-size: clamp(1rem, 2vw, 3rem);
+  font-size: clamp(1.3rem, 2vw, 3rem);
   border: none;
   width: 100%;
+}
+
+.form-control > .material-symbols-outlined {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  font-size: clamp(0.7rem, 1.3vw, 2.5rem);
+  visibility: hidden;
+}
+
+.form-control > .error-msg {
+  color: red;
+  font-size: clamp(0.7rem, 1.3vw, 2.5rem);
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error input {
+  border: 2px solid rgb(210, 25, 25);
+}
+
+.form-control.success input {
+  border: 2px solid rgb(68, 180, 85);
+}
+
+.form-control.success span.material-symbols-outlined.right {
+  visibility: visible;
+  color: rgb(68, 180, 85);
+}
+
+.form-control.error span.material-symbols-outlined.wrong {
+  visibility: visible;
+  color: rgb(210, 25, 25);
+}
+
+.form-control.error span.error-msg {
+  visibility: visible;
+}
+
+.form-control.error textarea {
+  border: 2px solid rgb(210, 25, 25);
+}
+
+.form-control.success textarea {
+  border: 2px solid rgb(68, 180, 85);
 }
 
 iframe {

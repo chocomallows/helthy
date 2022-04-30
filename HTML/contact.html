@@ -53,25 +53,27 @@
               >
                 <div class="form-control">
                   <label for="name">Name</label>
-                  <input required id="fname" type="text" name="Name" />
-                  <span>Error message</span>
+                  <input id="fname" type="text" name="Name" />
+                  <span class="material-symbols-outlined right"> check </span>
+                  <span class="material-symbols-outlined wrong"> close </span>
+                  <span class="error-msg">Error message</span>
                 </div>
 
                 <div class="form-control">
                   <label for="email">Email</label>
-                  <input required id="email" type="email" name="Email" />
-                  <span>Error message</span>
+                  <input id="email" type="email" name="Email" />
+                  <span class="material-symbols-outlined right"> check </span>
+                  <span class="material-symbols-outlined wrong"> close </span>
+                  <span class="error-msg">Error message</span>
                 </div>
 
                 <div class="form-control">
                   <label for="message">Message</label>
-                  <textarea
-                    required
-                    rows="5"
-                    id="message"
-                    name="Message"
-                  ></textarea>
-                  <span>Error message</span>
+
+                  <textarea rows="5" id="message" name="Message"></textarea>
+                  <span class="material-symbols-outlined right"> check </span>
+                  <span class="material-symbols-outlined wrong"> close </span>
+                  <span class="error-msg">Error message</span>
                 </div>
 
                 <input type="submit" value="Submit" />
