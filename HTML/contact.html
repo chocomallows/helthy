@@ -51,19 +51,29 @@
                 action="https://api.formbucket.com/f/c2K3QTQ"
                 method="post"
               >
-                <label for="name">Name</label>
-                <input required id="fname" type="text" name="Name" />
+                <div class="form-control">
+                  <label for="name">Name</label>
+                  <input required id="fname" type="text" name="Name" />
+                  <span>Error message</span>
+                </div>
 
-                <label for="email">Email</label>
-                <input required id="email" type="email" name="Email" />
+                <div class="form-control">
+                  <label for="email">Email</label>
+                  <input required id="email" type="email" name="Email" />
+                  <span>Error message</span>
+                </div>
 
-                <label for="message">Message</label>
-                <textarea
-                  required
-                  rows="10"
-                  id="message"
-                  name="Message"
-                ></textarea>
+                <div class="form-control">
+                  <label for="message">Message</label>
+                  <textarea
+                    required
+                    rows="5"
+                    id="message"
+                    name="Message"
+                  ></textarea>
+                  <span>Error message</span>
+                </div>
+
                 <input type="submit" value="Submit" />
               </form>
             </section>
@@ -99,5 +109,6 @@
     <footer id="footer">
       <div id="copyright">Copyright &copy; Helthy Inc. 2022</div>
     </footer>
+    <script src="../JS/app.js"></script>
   </body>
 </html>
