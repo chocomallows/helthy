@@ -100,6 +100,16 @@ html {
   color: #363130;
 }
 
+.main-content-contact {
+  font-size: clamp(1rem, 2vw, 3rem);
+  padding: 1rem;
+  overflow: hidden;
+  color: #363130;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .parallaxheader {
   background-image: url(../Media/Images/Parallaxheaderimage.jpg);
   width: 100%;
@@ -207,7 +217,6 @@ input[type="submit"] {
 #top-content {
   display: grid;
   max-width: 100%;
-  margin: 0 auto;
   grid-gap: 1em;
   padding-bottom: 1em;
   border-bottom: 1px solid grey;
