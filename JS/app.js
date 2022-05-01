@@ -33,6 +33,15 @@ function validateForm() {
   } else {
     setSuccess(message);
   }
+
+  if (
+    fnameInput !== "" &&
+    emailInput !== "" &&
+    validateEmail(emailInput) &&
+    messageInput !== ""
+  ) {
+    submitForm();
+  }
 }
 
 function setError(element, message) {
@@ -56,3 +65,5 @@ function validateEmail(email) {
     return false;
   }
 }
+
+function submitForm() {}

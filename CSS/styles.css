@@ -252,7 +252,7 @@ input[type="submit"] {
 }
 
 #contact-form input[type="submit"] {
-  background-color: #d0b3b9;
+  background-color: rgb(3, 95, 128);
   border: 0;
   -webkit-transition: background-color 500ms linear;
   -ms-transition: background-color 500ms linear;
@@ -433,7 +433,7 @@ td {
   justify-content: center;
   align-items: center;
   gap: 0.5em;
-  background-color: #d0b3b9;
+  background-color: rgb(3, 95, 128);
   padding: 5px;
   border-radius: 5px;
   cursor: pointer;
