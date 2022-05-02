@@ -2,11 +2,12 @@ const form = document.getElementById("contact-form");
 const fname = document.getElementById("fname");
 const email = document.getElementById("email");
 const message = document.getElementById("message");
+const submitBtn = document.querySelector(".form-control-btn");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  validateForm();
+  form.className.match("form-executing") ? null : validateForm();
 });
 
 function validateForm() {
@@ -66,4 +67,32 @@ function validateEmail(email) {
   }
 }
 
-function submitForm() {}
+function submitForm() {
+  form.className = "form-executing";
+  submitBtn.className = "form-control-btn loading";
+  const inputBtn = submitBtn.querySelector(".form-submit-btn");
+  inputBtn.value = "Submiting...";
+
+  setTimeout(succesfullSubmit, 3000);
+}
+
+function succesfullSubmit() {
+  submitBtn.className = "form-control-btn";
+  const inputBtn = submitBtn.querySelector(".form-submit-btn");
+  inputBtn.value = "Submit sent Succesfully!";
+  setTimeout(setDefaults, 3000);
+}
+
+function setDefaults() {
+  const inputBtn = submitBtn.querySelector(".form-submit-btn");
+  inputBtn.value = "Submit another Message";
+
+  fname.value = "";
+  email.value = "";
+  message.value = "";
+
+  const allInputs = document.querySelectorAll(".form-control");
+  allInputs.forEach((input) => (input.className = "form-control"));
+
+  form.className = "form-not-executing";
+}
