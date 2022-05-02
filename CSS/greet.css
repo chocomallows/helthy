@@ -1,6 +1,42 @@
 .btn-primary {
-  background-color: #d0b3b9;
-  border-color: #d0b3b9;
+  background-color: rgb(3, 95, 128);
+  border-color: rgb(3, 95, 128);
+}
+
+.btn-primary:hover {
+  background-color: #dbbfa6;
+  border-color: #dbbfa6;
+}
+
+.titel_recipe {
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
+.image_recipe {
+  max-height: 250px;
+}
+
+#recipes-title {
+  font-size: clamp(1rem, 10vw, 2rem);
+  padding: 10px;
+  font-weight: bold;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+.row div {
+  margin-top: 30px;
+}
+
+/* bootstrap classes */
+.carousel-item {
+  min-height: 300px;
+}
+
+.carousel-indicators button {
+  background-color: #d0b3b9 !important;
 }
 
 .modal-header {
@@ -15,17 +51,6 @@
 
 .modal-body {
   background-color: #fef4eb;
-}
-
-.titel_recipe {
-  font-variant: small-caps;
-  font-weight: bold;
-}
-
-#recipes-title {
-  font-size: clamp(1rem, 10vw, 2rem);
-  padding: 10px;
-  font-weight: bold;
 }
 
 /*# sourceMappingURL=greet.css.map */
