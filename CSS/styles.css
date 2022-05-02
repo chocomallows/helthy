@@ -118,7 +118,6 @@ html {
   align-items: center;
   text-align: center;
   background-attachment: fixed;
-  background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 5px;
@@ -133,7 +132,7 @@ html {
   font-size: clamp(1rem, 2vw, 3rem);
 }
 
-@media only screen and (max-device-width: 1366px) {
+@media only screen and (max-device-width: 500px) {
   .parallaxheader {
     background-attachment: scroll;
   }
@@ -178,8 +177,31 @@ html {
   color: #BF40BF;
 }
 
-.card {
+div.card-group.home {
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+div.card-group.home div.card {
   background-color:rgb(254, 244, 235);
+  border: 1px solid rgba(0,0,0,.125) !important;
+}
+
+div.card-group.home div.card img.card-img-top {
+  min-height: 125px;
+}
+
+div.card-group.home div.card div.card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+div.card-group.home div.card div.card-body p.card-text {
+  color:#363130;
+}
+
+div.card-group.home div.card div.card-body div.card-footer {
+  margin-top: auto;
 }
 
 #copyright {
@@ -208,6 +230,20 @@ p {
   color: white;
 }
 
+p.home {
+  color:#363130;
+}
+
+@media (min-width: 2500px) {
+  p.home {
+    font-size: 30px;
+  }
+
+  div.card-group.home div.card p.card-text {
+    font-size: 30px;
+  }
+}
+
 .index-h2 {
   margin-top: 20px;;
 }
@@ -216,6 +252,10 @@ p {
   width: 100%;
   height: 15vw;
   object-fit: cover;
+}
+
+section.home {
+  margin: 20px 0 50px 0;
 }
 
 #workshop-section {
