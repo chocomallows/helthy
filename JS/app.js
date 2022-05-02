@@ -7,7 +7,7 @@ const submitBtn = document.querySelector(".form-control-btn");
 form.addEventListener("submit", (e) => {
   e.preventDefault();
 
-  validateForm();
+  form.className.match("form-executing") ? null : validateForm();
 });
 
 function validateForm() {
@@ -68,7 +68,11 @@ function validateEmail(email) {
 }
 
 function submitForm() {
+  form.className = "form-executing";
   submitBtn.className = "form-control-btn loading";
+  const inputBtn = submitBtn.querySelector(".form-submit-btn");
+  inputBtn.value = "Submiting...";
+
   setTimeout(succesfullSubmit, 3000);
 }
 
@@ -89,4 +93,6 @@ function setDefaults() {
 
   const allInputs = document.querySelectorAll(".form-control");
   allInputs.forEach((input) => (input.className = "form-control"));
+
+  form.className = "form-not-executing";
 }
