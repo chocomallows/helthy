@@ -549,6 +549,10 @@ td {
   color: rgb(254, 244, 235);
 }
 
+.contact-details-links > span {
+  font-size: clamp(1rem, 2vw, 3rem);
+}
+
 #middle-content {
   height: 50vh;
   background-size: cover;
