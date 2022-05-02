@@ -481,6 +481,8 @@ td {
   background-size: cover;
   background-image: url(../Media/Images/contact-middle.jpg);
   object-fit: cover;
+  border-radius: 10px;
+  overflow: hidden;
 }
 
 #middle-content-container {
@@ -488,12 +490,11 @@ td {
   flex-direction: column;
   justify-content: center;
   gap: 0.5em;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.3);
   color: rgb(247, 233, 233);
   height: 100%;
   padding: 1em;
 }
-
 .foto {
   width: 260px;
 }
