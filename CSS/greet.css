@@ -17,22 +17,42 @@
   max-height: 250px;
 }
 
-#recipes-title {
-  font-size: clamp(1rem, 10vw, 2rem);
+.recipes-title {
+  font-size: clamp(1rem, 3vw, 3rem);
   padding: 10px;
   font-weight: bold;
 }
 
-.row {
+.recipes .row {
   margin-bottom: 20px;
 }
-.row div {
+.recipes .row div {
   margin-top: 30px;
+}
+
+a {
+  color: rgb(3, 95, 128);
+  display: inline;
+  font-size: clamp(1rem, 1.5vw, 3rem);
+}
+a:hover {
+  color: #dbbfa6;
 }
 
 /* bootstrap classes */
 .carousel-item {
-  min-height: 300px;
+  min-height: 500px;
+}
+.carousel-item img {
+  max-height: 200px;
+  max-width: 150px;
+  width: auto;
+  height: auto;
+  display: block;
+}
+
+.carousel-parent-image {
+  display: flex;
 }
 
 .carousel-indicators button {

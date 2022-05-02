@@ -1,40 +1,67 @@
 @import "colors.scss";
 
-.btn-primary{
+.btn-primary {
   background-color: $button-color;
   border-color: $button-color;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
   background-color: $button-hover-color;
   border-color: $button-hover-color;
 }
 
-.titel_recipe{
+.titel_recipe {
   font-variant: small-caps;
   font-weight: bold;
 }
+
 .image_recipe {
   max-height: 250px;
 }
-#recipes-title{
-  font-size: clamp(1rem, 10vw, 2rem);
+
+.recipes-title {
+  font-size: clamp(1rem, 3vw, 3rem);
   padding: 10px;
   font-weight: bold;
 }
-.row{
-  margin-bottom: 20px;
-  div {
-    margin-top: 30px;
+
+.recipes {
+  .row {
+    margin-bottom: 20px;
+
+    div {
+      margin-top: 30px;
+    }
+  }
+}
+
+a {
+  color: $link-color;
+  display: inline;
+  font-size: clamp(1rem, 1.5vw, 3rem);
+
+  &:hover {
+    color: $link-hover-color;
   }
 }
 
 
-
-
 /* bootstrap classes */
 .carousel-item {
-  min-height: 300px;
+  min-height: 500px;
   //padding: 30px 100px;
+
+  img {
+    max-height: 200px;
+    max-width: 150px;
+    width: auto;
+    height: auto;
+    display: block;
+  }
+}
+
+.carousel-parent-image {
+  display: flex;
 }
 
 .carousel-indicators {
@@ -43,14 +70,16 @@
   }
 }
 
-.modal-header{
+.modal-header {
   background-color: #fef4eb;
 }
-.modal-title{
+
+.modal-title {
   background-color: #fef4eb;
   font-weight: bold;
   font-size: 25px;
 }
-.modal-body{
+
+.modal-body {
   background-color: #fef4eb;
 }
