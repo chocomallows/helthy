@@ -9,7 +9,8 @@ body {
   background-color: #d6d8d4;
 }
 
-body, html {
+body,
+html {
   height: 100%;
 }
 
@@ -99,6 +100,16 @@ body, html {
   color: #363130;
 }
 
+.main-content-contact {
+  font-size: clamp(1rem, 2vw, 3rem);
+  padding: 1rem;
+  overflow: hidden;
+  color: #363130;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
 .parallaxheader {
   background-image: url(../Media/Images/Parallaxheaderimage.jpg);
   width: 100%;
@@ -112,13 +123,11 @@ body, html {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 5px;
-
 }
 
 .parallax-content {
   background: rgba(254, 244, 235, 0.5);
   border-radius: 5px;
-
 }
 
 .parallax-content h1 {
@@ -131,10 +140,14 @@ body, html {
   }
 }
 
-
-
 @media only screen and (max-width: 430px) {
   #name {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  #logo {
     display: none;
   }
 }
@@ -158,7 +171,6 @@ body, html {
   align-items: center;
 }
 
-
 header {
   background-color: #d0b3b9;
   text-align: center;
@@ -177,7 +189,7 @@ p {
 
 #workshop-section {
   padding: 20px;
-  background-image: url('../Media/Images/Bachelors.jpg');
+  background-image: url("../Media/Images/Bachelors.jpg");
   background-size: cover;
   overflow: hidden;
 }
@@ -193,7 +205,8 @@ p {
   margin-bottom: 20px;
 }
 
-input, select {
+input,
+select {
   width: 100%;
   box-sizing: border-box;
   padding: 10px;
@@ -201,7 +214,7 @@ input, select {
   margin-bottom: 10px;
 }
 
-input[type="submit"]{
+input[type="submit"] {
   color: white;
   background-color: rgb(3, 95, 128);
   font-weight: bold;
@@ -210,7 +223,6 @@ input[type="submit"]{
 #top-content {
   display: grid;
   max-width: 100%;
-  margin: 0 auto;
   grid-gap: 1em;
   padding-bottom: 1em;
   border-bottom: 1px solid grey;
@@ -229,13 +241,18 @@ input[type="submit"]{
   gap: 10px;
 }
 
-#contact-form > input {
-  padding: 5px;
-  font-size: clamp(1rem, 2vw, 3rem);
+.form-control {
+  position: relative;
+  padding-bottom: 10px;
 }
 
-#contact-form > input[type="submit"] {
-  background-color: #d0b3b9;
+.form-control input {
+  padding: 5px;
+  font-size: clamp(1.3rem, 2vw, 3rem);
+}
+
+#contact-form input[type="submit"] {
+  background-color: rgb(3, 95, 128);
   border: 0;
   -webkit-transition: background-color 500ms linear;
   -ms-transition: background-color 500ms linear;
@@ -244,18 +261,70 @@ input[type="submit"]{
   display: inline-block;
   text-align: start;
   border-radius: 10px;
+  font-size: clamp(1rem, 2vw, 3rem);
 }
-#contact-form > input[type="submit"]:hover {
-  background-color: #fef4eb;
+#contact-form input[type="submit"]:hover {
+  background-color: #dbbfa6;
   -webkit-transition: background-color 500ms linear;
   -ms-transition: background-color 500ms linear;
   transition: background-color 500ms linear;
+  color: rgb(21, 19, 19);
+  font-size: clamp(1rem, 2vw, 3rem);
 }
 
-#contact-form > textarea {
+.form-control textarea {
   resize: vertical;
   padding: 5px;
-  font-size: clamp(1rem, 2vw, 3rem);
+  font-size: clamp(1.3rem, 2vw, 3rem);
+  border: none;
+  width: 100%;
+}
+
+.form-control > .material-symbols-outlined {
+  position: absolute;
+  top: 40%;
+  right: 10px;
+  font-size: clamp(0.7rem, 1.3vw, 2.5rem);
+  visibility: hidden;
+}
+
+.form-control > .error-msg {
+  color: red;
+  font-size: clamp(0.7rem, 1.3vw, 2.5rem);
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  visibility: hidden;
+}
+
+.form-control.error input {
+  border: 2px solid rgb(210, 25, 25);
+}
+
+.form-control.success input {
+  border: 2px solid rgb(68, 180, 85);
+}
+
+.form-control.success span.material-symbols-outlined.right {
+  visibility: visible;
+  color: rgb(68, 180, 85);
+}
+
+.form-control.error span.material-symbols-outlined.wrong {
+  visibility: visible;
+  color: rgb(210, 25, 25);
+}
+
+.form-control.error span.error-msg {
+  visibility: visible;
+}
+
+.form-control.error textarea {
+  border: 2px solid rgb(210, 25, 25);
+}
+
+.form-control.success textarea {
+  border: 2px solid rgb(68, 180, 85);
 }
 
 iframe {
@@ -268,24 +337,103 @@ iframe {
   #top-content {
     grid-template-columns: repeat(2, 1fr);
   }
+  #bottom-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 #bottom-content {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-top: 1em;
-  padding-bottom: 0.5em;
+  display: grid;
+  max-width: 100%;
+  grid-gap: 1em;
+  padding-bottom: 1em;
   color: rgb(21, 19, 19);
 }
 
-.contact-details {
+#contact-details-oh {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+#opening-hours-title {
+  text-align: center;
+  padding-bottom: 10px;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid rgb(21, 19, 19);
+}
+
+#opening-hours-table {
+  padding: 0.5em;
+  border-collapse: collapse;
+}
+
+#opening-hours-table > tr,
+th,
+td {
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+#opening-hours-table tr:hover {
+  animation: scale 0.2s linear;
+  animation-fill-mode: forwards;
+}
+
+@keyframes scale {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    box-shadow: 0px 0px 10px 10px rgba(219, 210, 210, 0.3);
+  }
+}
+
+.left-border {
+  border-left: 1px solid rgb(21, 19, 19);
+}
+
+#more-contact-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+#more-contact-info-title {
+  padding-bottom: 10px;
+  margin-bottom: 0.5em;
+  border-bottom: 1px solid rgb(21, 19, 19);
+}
+
+#more-contact-info-list > li {
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  list-style-type: none;
+}
+
+#contact-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-top: 1em;
+  gap: 2em;
+}
+
+.contact-details-links {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 0.5em;
-  background-color: #d0b3b9;
+  background-color: rgb(3, 95, 128);
   padding: 5px;
   border-radius: 5px;
   cursor: pointer;
