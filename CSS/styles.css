@@ -63,7 +63,7 @@ html {
 }
 
 #contact-title {
-  font-size: clamp(1rem, 10vw, 2rem);
+  font-size: clamp(1.5rem, 3vw, 7rem);
   padding: 10px;
 }
 
@@ -166,20 +166,19 @@ html {
 }
 
 .colorWords {
-  color: #BF40BF;
+  color: #bf40bf;
 }
 
 .index-botlink {
-  color:#d0b3b9;
-
+  color: #d0b3b9;
 }
 
 .index-botlink:hover {
-  color: #BF40BF;
+  color: #bf40bf;
 }
 
 .card {
-  background-color:rgb(254, 244, 235);
+  background-color: rgb(254, 244, 235);
 }
 
 #copyright {
@@ -209,7 +208,7 @@ p {
 }
 
 .index-h2 {
-  margin-top: 20px;;
+  margin-top: 20px;
 }
 
 .card-img-top {
@@ -274,7 +273,7 @@ input[type="submit"] {
 
 .form-control {
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 0.7em;
 }
 
 .form-control input {
@@ -323,7 +322,7 @@ input[type="submit"] {
   color: red;
   font-size: clamp(0.7rem, 1.3vw, 2.5rem);
   position: absolute;
-  bottom: -3px;
+  bottom: 0;
   left: 0;
   visibility: hidden;
 }
@@ -433,6 +432,7 @@ iframe {
   padding-bottom: 10px;
   margin-bottom: 0.5em;
   border-bottom: 1px solid rgb(21, 19, 19);
+  font-size: clamp(1rem, 2vw, 7rem);
 }
 
 #opening-hours-table {
@@ -492,6 +492,7 @@ td {
   padding-bottom: 10px;
   margin-bottom: 0.5em;
   border-bottom: 1px solid rgb(21, 19, 19);
+  font-size: clamp(1rem, 2vw, 7rem);
 }
 
 #more-and-contact-container {
@@ -569,6 +570,14 @@ td {
   padding: 1em;
 }
 
+#middle-content-title {
+  font-size: clamp(1.7rem, 3vw, 7rem);
+}
+
+#middle-content-text {
+  font-size: clamp(1rem, 2vw, 7rem);
+}
+
 #contact-step {
   background-image: url(../Media/Images/contact-step.jpg);
   background-size: cover;
@@ -577,6 +586,10 @@ td {
   border-radius: 10px;
   padding: 0;
   overflow: hidden;
+}
+
+#contact-step-text {
+  font-size: clamp(1.5rem, 3vw, 7rem);
 }
 
 .foto {
@@ -613,4 +626,3 @@ footer {
 .fundo {
   color: #000000;
 }
-
