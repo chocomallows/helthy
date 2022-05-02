@@ -362,6 +362,7 @@ input[type="submit"] {
 }
 
 .lds-dual-ring {
+  visibility: hidden;
   position: absolute;
   right: 5%;
   top: 3%;
@@ -379,6 +380,10 @@ input[type="submit"] {
   border: 6px solid #fff;
   border-color: #fff transparent #fff transparent;
   animation: lds-dual-ring 1.2s linear infinite;
+}
+
+.form-control-btn.loading .lds-dual-ring {
+  visibility: visible;
 }
 @keyframes lds-dual-ring {
   0% {

@@ -2,6 +2,7 @@ const form = document.getElementById("contact-form");
 const fname = document.getElementById("fname");
 const email = document.getElementById("email");
 const message = document.getElementById("message");
+const submitBtn = document.querySelector(".form-control-btn");
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
@@ -66,4 +67,26 @@ function validateEmail(email) {
   }
 }
 
-function submitForm() {}
+function submitForm() {
+  submitBtn.className = "form-control-btn loading";
+  setTimeout(succesfullSubmit, 3000);
+}
+
+function succesfullSubmit() {
+  submitBtn.className = "form-control-btn";
+  const inputBtn = submitBtn.querySelector(".form-submit-btn");
+  inputBtn.value = "Submit sent Succesfully!";
+  setTimeout(setDefaults, 3000);
+}
+
+function setDefaults() {
+  const inputBtn = submitBtn.querySelector(".form-submit-btn");
+  inputBtn.value = "Submit another Message";
+
+  fname.value = "";
+  email.value = "";
+  message.value = "";
+
+  const allInputs = document.querySelectorAll(".form-control");
+  allInputs.forEach((input) => (input.className = "form-control"));
+}
