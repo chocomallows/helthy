@@ -1,6 +1,12 @@
+@import "colors.scss";
+
 .btn-primary{
-  background-color: #d0b3b9;
-  border-color: #d0b3b9;
+  background-color: $button-color;
+  border-color: $button-color;
+}
+.btn-primary:hover{
+  background-color: $button-hover-color;
+  border-color: $button-hover-color;
 }
 
 .titel_recipe{
@@ -8,18 +14,27 @@
   font-weight: bold;
 }
 .image_recipe {
-  max-height: 300px;
+  max-height: 250px;
 }
 #recipes-title{
   font-size: clamp(1rem, 10vw, 2rem);
   padding: 10px;
   font-weight: bold;
 }
+.row{
+  margin-bottom: 20px;
+  div {
+    margin-top: 30px;
+  }
+}
+
+
+
 
 /* bootstrap classes */
 .carousel-item {
   min-height: 300px;
-  padding: 30px 100px;
+  //padding: 30px 100px;
 }
 
 .carousel-indicators {

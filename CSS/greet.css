@@ -1,6 +1,11 @@
 .btn-primary {
-  background-color: #d0b3b9;
-  border-color: #d0b3b9;
+  background-color: rgb(3, 95, 128);
+  border-color: rgb(3, 95, 128);
+}
+
+.btn-primary:hover {
+  background-color: #dbbfa6;
+  border-color: #dbbfa6;
 }
 
 .titel_recipe {
@@ -9,7 +14,7 @@
 }
 
 .image_recipe {
-  max-height: 300px;
+  max-height: 250px;
 }
 
 #recipes-title {
@@ -18,10 +23,16 @@
   font-weight: bold;
 }
 
+.row {
+  margin-bottom: 20px;
+}
+.row div {
+  margin-top: 30px;
+}
+
 /* bootstrap classes */
 .carousel-item {
   min-height: 300px;
-  padding: 30px 100px;
 }
 
 .carousel-indicators button {
