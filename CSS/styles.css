@@ -415,7 +415,7 @@ td {
 #more-contact-info-list > li {
   padding-top: 0.5em;
   padding-bottom: 0.5em;
-  list-style-type: circle;
+  list-style-type: none;
 }
 
 #contact-links {
