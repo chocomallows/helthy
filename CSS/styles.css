@@ -183,8 +183,13 @@ h2 {
   font-size: 30px;
 }
 
+h3 {
+  font-size: 25px;
+}
+
 p {
   font-size: 20px;
+  color: white;
 }
 
 #workshop-section {
@@ -196,7 +201,7 @@ p {
 }
 
 .formContainer {
-  max-width: 280px;
+  max-width: 500px;
   background-color: #8e7f7fbb;
   padding: 20px;
   float: right;
@@ -472,3 +477,8 @@ footer {
   transform: scale(1.1);
   transition: all 0.5s;
 }
+
+.fundo {
+  color: #000000;
+}
+
