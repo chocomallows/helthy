@@ -105,7 +105,6 @@ html {
   padding: 1rem;
   overflow: hidden;
   color: #363130;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
 }
@@ -403,13 +402,18 @@ td {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   padding: 1em;
 }
 
 #more-contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  height: 100%;
   width: 100%;
-  padding-bottom: 0.3em;
+  padding-bottom: 1em;
 }
 
 #more-contact-info-title {
@@ -417,6 +421,13 @@ td {
   padding-bottom: 10px;
   margin-bottom: 0.5em;
   border-bottom: 1px solid rgb(21, 19, 19);
+}
+
+#more-and-contact-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
 
 #more-contact-info-list {
@@ -429,25 +440,25 @@ td {
 #more-contact-info-list > li {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   list-style-type: none;
-  width: 70%;
+  width: 100%;
 }
 #more-contact-info-list > li > i {
   font-size: clamp(1rem, 2vw, 3rem);
   margin-right: 10px;
 }
-#more-contact-info-list > li > h4 {
-  font-size: clamp(1rem, 2vw, 3rem);
+#more-contact-info-list > li > h6 {
+  font-size: clamp(0.7rem, 1.5vw, 3rem);
   margin-right: 10px;
   text-align: start;
 }
 
 #contact-links {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   width: 100%;
   gap: 2em;
