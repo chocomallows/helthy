@@ -40,6 +40,12 @@ main {
   margin-top: 3rem;
 }
 
+@media (min-width: 2000px) {
+  main {
+    margin-top: 5rem;
+  }
+}
+
 #navbar {
   position: fixed;
   z-index: 10;
