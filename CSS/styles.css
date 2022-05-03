@@ -200,6 +200,7 @@ div.card-group.home div.card div.card-body {
 
 div.card-group.home div.card div.card-body p.card-text {
   color: #363130;
+  font-size: 20px;
 }
 
 div.card-group.home div.card div.card-body div.card-footer {
@@ -245,6 +246,7 @@ div.card-group.home div.card div.card-body div.card-footer {
 
 p.home {
   color: #363130;
+  font-size: 20px;
 }
 
 @media (min-width: 2500px) {
