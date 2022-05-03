@@ -33,4 +33,4 @@ In this section, we'll give you a quick preview of every page that was created.
 
 Here is a preview of the homepage:
 
-![Homepage] (./Media/Preview screenshots/Indexpage.PNG)
+![Homepage] (./Media/Preview screenshots/Indexpage.PNG "Homepage Preview")
