@@ -246,7 +246,7 @@ div.card-group.home div.card div.card-body div.card-footer {
 .cabecalho {
   background-color: #d0b3b9;
   text-align: center;
-  color: black;
+  color: #363130;
   font-size: 22px;
   padding: 10px;
 }
@@ -330,7 +330,7 @@ select {
 }
 
 input[type="submit"] {
-  color: white;
+  color: rgb(254, 244, 235);
   background-color: rgb(3, 95, 128);
   font-weight: bold;
 }
@@ -461,8 +461,8 @@ input[type="submit"] {
   height: 40%;
   margin: 8px;
   border-radius: 50%;
-  border: 6px solid #fff;
-  border-color: #fff transparent #fff transparent;
+  border: 6px solid rgb(254, 244, 235);
+  border-color: rgb(254, 244, 235) transparent rgb(254, 244, 235) transparent;
   animation: lds-dual-ring 1.2s linear infinite;
 }
 
@@ -759,7 +759,7 @@ td {
 }
 
 .descricao {
-  color: black;
+  color: #363130;
   display: inline-block;
   text-align: left;
   max-width: 40%;
@@ -778,5 +778,5 @@ td {
 
 .fundo {
   font-size: 20px;
-  color: #000000;
+  color: #363130;
 }
