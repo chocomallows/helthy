@@ -26,6 +26,12 @@ html {
   font-size: clamp(1rem, 2vw, 3rem);
 }
 
+@media (min-width: 2000px) {
+  #navbar {
+    height: 5rem;
+  }
+}
+
 #footer {
   justify-content: center;
   font-size: clamp(0.5rem, 1vw, 2rem);
@@ -42,6 +48,8 @@ html {
 }
 
 #links-container > a {
+  line-height: normal;
+  font-weight: 100;
   text-decoration: none;
   color: inherit;
   padding: 5px;
@@ -166,17 +174,17 @@ html {
 
 .colorWords {
   color: #bf40bf;
-  font-weight:bolder;
+  font-weight: bolder;
 }
 
 .index-botlink {
   color: #d0b3b9;
-  font-weight:bolder;
+  font-weight: bolder;
 }
 
 .index-botlink:hover {
   color: #bf40bf;
-  font-weight:bolder;
+  font-weight: bolder;
 }
 
 div.card-group.home {
