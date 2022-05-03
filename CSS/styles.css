@@ -214,7 +214,7 @@ div.card-group.home div.card div.card-body div.card-footer {
   align-items: center;
 }
 
-header {
+.cabecalho {
   background-color: #d0b3b9;
   text-align: center;
   color: black;
@@ -222,17 +222,25 @@ header {
   padding: 10px;
 }
 
-h2 {
+.texto2 {
   font-size: 30px;
 }
 
-h3 {
+.texto3 {
   font-size: 25px;
 }
 
-p {
+.paragrafo {
   font-size: 20px;
-  color: white;
+  color: rgb(254, 244, 235);
+}
+
+#workshop-secao {
+  padding: 20px;
+  background-image: url("../Media/Images/Bachelors.jpg");
+  background-size: cover;
+  overflow: hidden;
+  height: 100%;
 }
 
 p.home {
@@ -714,13 +722,10 @@ td {
   width: 260px;
 }
 
-footer {
-  padding: 40px;
-  text-align: center;
-}
-
 .baixo {
   background-color: #d0b3b9;
+  padding: 40px;
+  text-align: center;
 }
 
 .descricao {
@@ -742,5 +747,6 @@ footer {
 }
 
 .fundo {
+  font-size: 20px;
   color: #000000;
 }
