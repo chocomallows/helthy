@@ -234,7 +234,7 @@ div.card-group.home div.card div.card-body div.card-footer {
 
 #workshop-secao {
   padding: 20px;
-  background-image: url('../Media/Images/Bachelors.jpg');
+  background-image: url("../Media/Images/Bachelors.jpg");
   background-size: cover;
   overflow: hidden;
   height: 100%;
@@ -269,7 +269,6 @@ section.home {
 }
 
 #workshop-section {
->>>>>>> 17fcd7872d00ca91575ccc9067fb0482d2fed9bb
   padding: 20px;
   background-image: url("../Media/Images/Bachelors.jpg");
   background-size: cover;
