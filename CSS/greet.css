@@ -30,12 +30,12 @@
   margin-top: 30px;
 }
 
-a {
+.cookbooklink {
   color: rgb(3, 95, 128);
   display: inline;
   font-size: clamp(1rem, 1.5vw, 3rem);
 }
-a:hover {
+.cookbooklink:hover {
   color: #dbbfa6;
 }
 

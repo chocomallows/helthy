@@ -26,14 +26,19 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Helthy | Title</title>
+    <title>Helthy | Contact</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="../Media/Icons/helthyiconv2.png"
+    />
   </head>
   <body>
     <header>
       <nav id="navbar">
         <div id="logo-container">
           <a href="index.html"
-            ><img id="logo" src="../Media/Icons/logo_transparant.png" alt=""
+            ><img id="logo" src="../Media/Icons/helthyiconv2.png" alt=""
           /></a>
           <div id="name">helthy</div>
         </div>
@@ -57,7 +62,12 @@
               >
                 <div class="form-control">
                   <label for="name">Name *</label>
-                  <input id="fname" type="text" name="Name" />
+                  <input
+                    id="fname"
+                    type="text"
+                    name="Name"
+                    placeholder="Your name"
+                  />
                   <span class="material-symbols-outlined right"> check </span>
                   <span class="material-symbols-outlined wrong"> close </span>
                   <span class="error-msg">Error message</span>
@@ -65,7 +75,12 @@
 
                 <div class="form-control">
                   <label for="email">Email *</label>
-                  <input id="email" type="text" name="Email" />
+                  <input
+                    id="email"
+                    type="text"
+                    name="Email"
+                    placeholder="Example@example.com"
+                  />
                   <span class="material-symbols-outlined right"> check </span>
                   <span class="material-symbols-outlined wrong"> close </span>
                   <span class="error-msg">Error message</span>
@@ -74,13 +89,20 @@
                 <div class="form-control">
                   <label for="message">Message *</label>
 
-                  <textarea rows="5" id="message" name="Message"></textarea>
+                  <textarea
+                    rows="5"
+                    id="message"
+                    name="Message"
+                    placeholder="Let us know what you need!"
+                  ></textarea>
                   <span class="material-symbols-outlined right"> check </span>
                   <span class="material-symbols-outlined wrong"> close </span>
                   <span class="error-msg">Error message</span>
                 </div>
-
-                <input type="submit" value="Submit" />
+                <div class="form-control-btn">
+                  <input type="submit" value="Submit" class="form-submit-btn" />
+                  <div class="lds-dual-ring"></div>
+                </div>
               </form>
             </section>
             <section class="top" id="google-iframe">
@@ -93,6 +115,17 @@
                 loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"
               ></iframe>
+            </section>
+          </div>
+          <div id="middle-content">
+            <section id="middle-content-container">
+              <h2 id="middle-content-title">We would love to hear from you,</h2>
+              <p id="middle-content-text">
+                We at Helthy care about you and would like to get to improve
+                your lifestyle by recommending an ideal path, but first we would
+                need to get to know you. The process is fast and simple, and the
+                result is always happy customers!
+              </p>
             </section>
           </div>
           <div id="bottom-content">
@@ -135,31 +168,56 @@
                 </table>
               </div>
             </section>
+
             <section class="bottom" id="more-contact-info-container">
+              <h3 id="more-contact-info-title">More Info</h3>
               <div id="more-contact-info">
-                <h3 id="more-contact-info-title">More Info</h3>
-                <ul id="more-contact-info-list">
-                  <li><i class="fa fa-instagram"></i> INSTAGRAM</li>
-                  <li><i class="fa fa-facebook"></i> FACEBOOK</li>
-                  <li><i class="fa fa-twitter"></i> TWITTER</li>
-                  <li><i class="fa fa-reddit"></i> IBAN</li>
-                  <li><i class="fa fa-phone"></i> PHONE</li>
-                  <li><i class="fa fa-email"></i> EMAIL</li>
-                </ul>
+                <div id="contact-sm">
+                  <ul id="more-contact-info-list">
+                    <li>
+                      <i class="fa fa-instagram fa-fw"></i>
+                      <h6>@Helthy_Official</h6>
+                    </li>
+                    <li>
+                      <i class="fa fa-facebook fa-fw"></i>
+                      <h6>Helthy Group</h6>
+                    </li>
+                    <li>
+                      <i class="fa fa-twitter fa-fW"></i>
+                      <h6>@HelthyOfficial</h6>
+                    </li>
+                    <li>
+                      <i class="fa fa-bank fa-fW"></i>
+                      <h6 id="contact-iban">BE99 1234 4321 12 1668</h6>
+                    </li>
+                  </ul>
+                </div>
+                <div id="contact-links">
+                  <a
+                    href="tel:+32 0471 031337"
+                    class="contact-details-links"
+                    title="Call +32 0471 031337"
+                  >
+                    <span class="material-symbols-outlined"> call </span>
+                  </a>
+                  <a
+                    href="mailto: customer_service@helthy.org"
+                    class="contact-details-links"
+                    title="Mail customer_service@helthy.org"
+                  >
+                    <span class="material-symbols-outlined"> mail </span>
+                  </a>
+                  <a class="contact-details-links">
+                    <span class="material-symbols-outlined"> sms </span>
+                  </a>
+                </div>
               </div>
-              <div id="contact-links">
-                <a href="tel:+32 0471 031337" class="contact-details-links">
-                  <span class="material-symbols-outlined"> call </span>
-                </a>
-                <a
-                  href="mailto: customer_service@helthy.org"
-                  class="contact-details-links"
-                >
-                  <span class="material-symbols-outlined"> mail </span>
-                </a>
-                <a class="contact-details-links">
-                  <span class="material-symbols-outlined"> sms </span>
-                </a>
+            </section>
+            <section class="bottom" id="contact-step">
+              <div id="contact-step-container">
+                <h2 id="contact-step-text">
+                  You are one stop away from Helthyness!
+                </h2>
               </div>
             </section>
           </div>
