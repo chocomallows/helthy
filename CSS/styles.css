@@ -166,14 +166,17 @@ html {
 
 .colorWords {
   color: #bf40bf;
+  font-weight:bolder;
 }
 
 .index-botlink {
   color: #d0b3b9;
+  font-weight:bolder;
 }
 
 .index-botlink:hover {
   color: #bf40bf;
+  font-weight:bolder;
 }
 
 div.card-group.home {
